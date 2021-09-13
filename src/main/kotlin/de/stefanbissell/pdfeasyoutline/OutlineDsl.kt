@@ -1,15 +1,22 @@
 package de.stefanbissell.pdfeasyoutline
 
-fun outline(block: OutlineEntry.() -> Unit) =
-    OutlineEntry().apply(block)
+fun outline(
+    label: String,
+    page: Int = 1,
+    block: OutlineEntry.() -> Unit
+) = OutlineEntry(label, page).apply(block)
 
 class OutlineEntry(
-    var label: String = "",
-    var page: Int = 1
+    val label: String,
+    val page: Int
 ) {
     val entries = mutableListOf<OutlineEntry>()
 
-    fun entry(label: String, page: Int, block: OutlineEntry.() -> Unit = {}) {
+    fun entry(
+        label: String,
+        page: Int,
+        block: OutlineEntry.() -> Unit = {}
+    ) {
         entries += OutlineEntry(label, page).apply(block)
     }
 }

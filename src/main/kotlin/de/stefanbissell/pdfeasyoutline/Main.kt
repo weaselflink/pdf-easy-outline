@@ -7,8 +7,7 @@ fun main() {
     ).makeOutline(config)
 }
 
-val config = outline {
-    label = "Fading Suns - Worlds of the Realm"
+val config = outline("Fading Suns - Worlds of the Realm") {
     entry("Hawkwood Fiefs", 5) {
         entry("Delphi", 8)
         entry("Ravenna", 15)
