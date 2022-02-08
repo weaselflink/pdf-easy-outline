@@ -7,15 +7,15 @@ plugins {
 }
 
 group = "de.stefanbissell.pdf-easy-outline"
-version = "1.0-SNAPSHOT"
+version = "1.0"
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation("com.itextpdf:itext7-core:7.1.16")
-    implementation("org.slf4j:slf4j-nop:1.7.32")
+    implementation("com.itextpdf:itext7-core:7.2.1]")
+    implementation("org.slf4j:slf4j-nop:1.7.35")
 }
 
 tasks {
