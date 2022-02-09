@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.itextpdf:itext7-core:7.2.1]")
+    implementation("com.itextpdf:itext7-core:7.2.1")
     implementation("org.slf4j:slf4j-nop:1.7.35")
 }
 
