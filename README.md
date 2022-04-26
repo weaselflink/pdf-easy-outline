@@ -67,4 +67,4 @@ PDF with an outline in `output-file`.
 
 ### Limitations
 
-An existing outlines in `input-file` is removed.
+An existing outline in `input-file` is removed.
