@@ -15,7 +15,10 @@ class EasyOutliner(
     private val doc = PdfDocument(reader(source), writer(dest))
 
     fun makeOutline(config: OutlineEntry) {
-        doc.getOutlines(false)
+        doc.getOutlines(true)
+            .removeOutline()
+
+        doc.getOutlines(true)
             .also {
                 addEntry(it, config)
             }
