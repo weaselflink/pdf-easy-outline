@@ -1,4 +1,3 @@
-import de.stefanbissell.pdfeasyoutline.outline
 
 outline("Fading Suns - Worlds of the Realm") {
     entry("Hawkwood Fiefs", 5) {

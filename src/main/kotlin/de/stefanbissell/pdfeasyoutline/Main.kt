@@ -17,5 +17,6 @@ fun main(args: Array<String>) {
 private fun loadConfig(path: String): OutlineEntry {
     val script = Path.of(path).toFile().readText()
     val engine = ScriptEngineManager().getEngineByExtension("kts")
+    engine.eval("import de.stefanbissell.pdfeasyoutline.outline\n")
     return engine.eval(script) as OutlineEntry
 }

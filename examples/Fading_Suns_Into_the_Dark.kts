@@ -1,4 +1,3 @@
-import de.stefanbissell.pdfeasyoutline.outline
 
 outline("Fading Suns - Into the Dark") {
     entry("Alustro's Journel: Ghost Story", 7)
